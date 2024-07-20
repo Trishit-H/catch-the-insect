@@ -72,25 +72,25 @@ function catchInsect() {
     addInsects()
 }
 
-// function getRandomLocation() {
-//     const width = window.innerWidth;
-//     const height = window.innerHeight;
-
-//     const x = Math.random() * (width - 200) + 100;
-//     const y = Math.random() * (height - 200) + 100;
-
-//     return { x, y }
-// }
-
 function getRandomLocation() {
-    const insectSize = 100; // Size of the insect in pixels
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const exclusionHeight = 50; // Height of the exclusion zone at the top of the screen
 
-    // Ensure the insect appears fully within the screen and not in the exclusion zone
-    const x = Math.random() * (width - insectSize);
-    const y = Math.random() * (height - exclusionHeight - insectSize) + exclusionHeight;
+    const x = Math.random() * (width - 400) + 200;
+    const y = Math.random() * (height - 400) + 200;
 
-    return { x, y };
+    return { x, y }
 }
+
+// function getRandomLocation() {
+//     const insectSize = 100; // Size of the insect in pixels
+//     const width = window.innerWidth;
+//     const height = window.innerHeight;
+//     const exclusionHeight = 50; // Height of the exclusion zone at the top of the screen
+
+//     // Ensure the insect appears fully within the screen and not in the exclusion zone
+//     const x = Math.random() * (width - insectSize);
+//     const y = Math.random() * (height - exclusionHeight - insectSize) + exclusionHeight;
+
+//     return { x, y };
+// }
