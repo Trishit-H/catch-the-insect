@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F05D23;
+    color: #fff;
+    font-family: 'Press Start 2P';
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    line-height: 1.4;
+}
+
+.screen {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.75s linear;
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.btn {
+    border: 0;
+    background-color: #fff;
+    color: #F05D23;
+    cursor: pointer;
+    font-family: 'Press Start 2P';
+    padding: 15px 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+.insect_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.insect_list li {
+    margin: 10px;
+}
+
+.choose_insect_btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Press Start 2P';
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s ease;
+}
+
+.choose_insect_btn:hover {
+    background: #fff;
+    color: #F05D23;
+}
+
+.choose_insect_btn img {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+
+.game_container {
+    position: relative;
+}
+
+#time,
+#score {
+    position: absolute;
+    top: 20px;
+}
+
+#time {
+    left: 20px;
+}
+
+#score {
+    right: 60px;
+}
+
+.insect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-out;
+}
+
+.insect.catched {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+
+    #time,
+    #score {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .choose_insect_btn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .choose_insect_btn img {
+        object-fit: contain;
+        height: 50px;
+        width: 50px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .insect {
+        width: 50px;
+        height: 50px;
+    }
+}
