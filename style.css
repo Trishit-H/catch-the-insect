@@ -90,7 +90,16 @@ h1 {
     position: relative;
 }
 
-#time,
+.score_time {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* #time,
 #score {
     position: absolute;
     top: 20px;
@@ -102,6 +111,14 @@ h1 {
 
 #score {
     right: 60px;
+} */
+
+#time {
+    margin-left: 20px;
+}
+
+#score {
+    margin-right: 20px;
 }
 
 .insect {
