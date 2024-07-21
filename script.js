@@ -76,7 +76,7 @@ function getRandomLocation() {
     const width = window.innerWidth;
     const height = window.innerHeight - scoreEl.offsetHeight;
 
-    const x = Math.random() * (width - 200) + 100;
+    const x = Math.random() * (width - 100) + 50;
     const y = Math.random() * (height - 200) + 100;
 
     return { x, y }
